@@ -32,6 +32,12 @@ before you list it.
 
 The agent asks for anything else, and doesn't ask again for something already approved.
 
+The agent reads the "What the agent may do without asking" settings from the root AGENTS.md on the base branch (the
+pull request's base, otherwise the repository's default branch), for example with `git show origin/main:AGENTS.md`,
+not from the checkout. A branch, and especially someone else's pull request, can change its own copy, so a change to
+those settings takes effect only once it's merged. A review reports such a change as a finding. The other settings
+(commands, folders) come from the checkout as usual.
+
 ## The review folder for a branch
 
 story-kickoff, pr-review and second-opinion-review keep their records for a branch in one shared folder:
