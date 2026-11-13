@@ -31,6 +31,7 @@
       "Interactive",
       "Write"
     ],
-    "websiteURL": "https://github.com/DocSpring/docspring-agent-playbook"
+    "websiteURL": "https://github.com/DocSpring/docspring-agent-playbook",
+    "composerIcon": "./assets/icon.png"
   }
 }

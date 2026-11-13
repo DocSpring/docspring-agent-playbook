@@ -38,6 +38,21 @@ root AGENTS.md ([`CONFIGURE.md`](CONFIGURE.md) has the block to copy); a skill t
 They ship worked adapters for GitHub, GitHub Actions and the Codex CLI; for other tools, write and check your own
 adapter.
 
+## What the skills run and send
+
+The skills run the tools your AGENTS.md settings name, and ship no services or telemetry of their own.
+
+- `pr-review`, `fix-ci` and `session-wrap-up` use the GitHub CLI (`gh`) to read and update pull requests, checks and
+  comments in your repository. `pr-review` posts nothing until you approve it.
+- `story-kickoff` and `session-wrap-up` use your tracker's command to read tickets, and to create or move them when
+  you or the settings approve it.
+- `second-opinion-review` runs your Codex CLI, which sends the review prompt, the diff and the files Codex reads to
+  OpenAI under your Codex account.
+- `ui-qa-pass` drives a headless Chromium with Playwright against the app URL you give it.
+- `session-wrap-up` reads your agent's session transcript from your machine.
+
+Review notes, plans and screenshots are written to the folders your settings name.
+
 ## Install
 
 Skills, for any agent the [skills CLI](https://github.com/vercel-labs/skills) supports:
