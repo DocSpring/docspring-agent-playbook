@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- story-kickoff: its description lost everything after "work on #42", which YAML read as a comment; the example is now "work on issue 42".
+- The Claude plugin manifest sets a display name and a support link.
+
 ## 1.0.0
 
 - First release: principles (with optional sections for particular product models, and an optional Rails and Postgres
