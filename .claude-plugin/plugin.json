@@ -1,6 +1,7 @@
 {
   "name": "docspring-agent-playbook",
-  "version": "1.0.0",
+  "displayName": "DocSpring Agent Playbook",
+  "version": "1.0.1",
   "description": "Engineering principles, AGENTS.md templates and workflow skills for coding agents: investigate a ticket before coding, review a pull request with you, get a second-opinion review, fix CI, QA every changed screen, and wrap up loose ends.",
   "author": {
     "name": "DocSpring",
@@ -9,6 +10,7 @@
   },
   "homepage": "https://github.com/DocSpring/docspring-agent-playbook",
   "repository": "https://github.com/DocSpring/docspring-agent-playbook",
+  "supportUrl": "https://github.com/DocSpring/docspring-agent-playbook/issues",
   "license": "MIT",
   "keywords": [
     "agents-md",
